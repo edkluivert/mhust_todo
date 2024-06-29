@@ -1,16 +1,12 @@
 # mhust_todo
 
-A new Flutter project.
+Clone repo 
+run flutter pub get once cloned
+run app
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+challenges
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+i had a problem with the update functionality and writing tests, i didnt have enough time but this was a great experience all the same
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
