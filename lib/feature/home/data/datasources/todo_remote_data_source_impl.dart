@@ -23,7 +23,7 @@ class TodoRemoteDataSourceImpl implements TodoRemoteDataSource {
   }
 
   @override
-  Future<TodoModel> addTodo(String title, bool completed, int userId, int id) async {
+  Future<TodoModel> addTodo(String title, bool completed, int userId) async {
     final response = await dio.post('https://dummyjson.com/todos/add',
         data: {'todo': title, 'completed':completed,
     'userId' : userId, });

@@ -14,8 +14,8 @@ class TodoUseCase{
   }
 
 
-  Future<TodoEntity> addTodo(String title, bool completed, int userId, int id) async {
-    final task = await todoRepository.addTodo(title, completed, userId, id);
+  Future<TodoEntity> addTodo(String title, bool completed, int userId, ) async {
+    final task = await todoRepository.addTodo(title, completed, userId,);
     return task;
   }
 

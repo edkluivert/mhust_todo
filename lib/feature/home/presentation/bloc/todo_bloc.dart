@@ -27,7 +27,7 @@ class TodoBloc extends Bloc<TodoEvent, TodoState> {
 
   Future<void> _onAddTodo(AddTodoEvent event, Emitter<TodoState> emit) async {
     try {
-      final todo = await todoUseCase.addTodo(event.title, event.completed, event.userId, event.id);
+      final todo = await todoUseCase.addTodo(event.title, event.completed, event.userId);
       final currentState = state;
       if (currentState is TodosFetched) {
         emit(TodosFetched(todos: List.from(currentState.todos)..add(todo)));

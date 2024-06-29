@@ -150,7 +150,7 @@ void main() {
             data: todoJson, statusCode: 201, requestOptions: RequestOptions(path: '')));
 
         // Act
-        final result = await remoteDataSource.addTodo(title, completed, userId, 1);
+        final result = await remoteDataSource.addTodo(title, completed, userId, );
 
         // Assert
         expect(result, TodoModel.fromJson(todoJson));
@@ -168,7 +168,7 @@ void main() {
         final call = remoteDataSource.addTodo;
 
         // Assert
-        expect(() => call(title, completed, userId,1), throwsException);
+        expect(() => call(title, completed, userId), throwsException);
       });
     });
 

@@ -19,9 +19,9 @@ class AddTodoEvent extends TodoEvent {
   final String title;
   final bool completed;
   final int userId;
-  final int id;
 
-  AddTodoEvent({required this.title, required this.completed, required this.userId, required this.id});
+
+  AddTodoEvent({required this.title, required this.completed, required this.userId,});
 
   @override
   List<Object> get props => [title];

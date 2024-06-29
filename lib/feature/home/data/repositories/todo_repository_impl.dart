@@ -30,7 +30,7 @@ class TodoRepositoryImpl implements TodoRepository {
           mergedTodos.add(localTodo);
         }
       }
-
+      print(mergedTodos);
       return mergedTodos;
     } catch (e) {
       //fallback to local todos
@@ -41,8 +41,8 @@ class TodoRepositoryImpl implements TodoRepository {
 
 
   @override
-  Future<TodoEntity> addTodo(String title, bool completed, int userId, int id) async {
-    final todo = await remoteDataSource.addTodo(title,completed,userId, id);
+  Future<TodoEntity> addTodo(String title, bool completed, int userId) async {
+    final todo = await remoteDataSource.addTodo(title,completed,userId);
     final localTodos = await localDataSource.getLocalTodos();
     localDataSource.localTodos([...localTodos, todo]);
     return todo;

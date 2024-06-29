@@ -51,9 +51,8 @@ class _TodoDialogState extends State<TodoDialog> {
         TextButton(
           onPressed: () {
             final title = _titleController.text;
-            final Random random = Random();
             if (title.isNotEmpty) {
-              BlocProvider.of<TodoBloc>(context).add(AddTodoEvent(title: title, completed: false, userId: userId!, id: random.nextInt(100000)));
+              BlocProvider.of<TodoBloc>(context).add(AddTodoEvent(title: title, completed: false, userId: userId!, ));
               Navigator.of(context).pop();
             }
           },
