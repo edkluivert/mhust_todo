@@ -8,5 +8,5 @@ run app
 
 challenges
 
-i had a problem with the update functionality and writing tests, i didnt have enough time but this was a great experience all the same
+i had a problem with the update functionality, I wish I had more time and writing tests, i didnt have enough time but this was a great experience all the same
 
